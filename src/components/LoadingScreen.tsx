@@ -1,4 +1,4 @@
-import Pokedex from "../assets/pokedex.png"
+import Pokedex from "../assets/loading.gif"
 import styles from "./loadingScreen.module.css"
 
 const LoadingScreen = () => {
@@ -6,7 +6,7 @@ const LoadingScreen = () => {
         <>
             <div className={styles.loadingScreen}>
                 <img className={styles.loadingScreenIcon} src={Pokedex} alt="Pokedex" />
-                <div className={styles.loadingText} >Loading...</div>
+
             </div>
 
         </>

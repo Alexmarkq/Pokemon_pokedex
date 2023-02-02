@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./footer.module.css"
-
-import PokemonPic from "../assets/pikachu.png";
+import PokemonPic from "../assets/bomba.png";
 import LocationPic from "../assets/pointer.png";
 import ItemsPic from "../assets/pokeball.png";
 
@@ -13,13 +12,13 @@ const Footer = () => {
                 <img className={styles.footerIcon} src={PokemonPic} alt="Pokeball" />
                 Pokemons
             </Link>
-            <Link className={styles.footerLink} to="/items">
+            <Link className={styles.footerLink} to="https://github.com/Alexmarkq">
                 <img className={styles.footerIcon} src={ItemsPic} alt="Item" />
-                Items
+                Github
             </Link>
-            <Link className={styles.footerLink} to="/location">
+            <Link className={styles.footerLink} to="https://www.linkedin.com/in/alexis-marquez-de-eugenio/?locale=en_US">
                 <img className={styles.footerIcon} src={LocationPic} alt="Location" />
-                Map
+                Linkedin
             </Link>
         </footer>
     );

@@ -11,7 +11,7 @@ const Header = ({ query, setQuery }: HeaderProps) => {
 
         <header className={styles.header}>
             <input className={styles.input}
-                placeholder='Search a Pokemon'
+                placeholder='Search your Pokemon'
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)} />
