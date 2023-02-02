@@ -1,4 +1,4 @@
-# Live version here ---> https://alexmark-pokedex.netlify.app/
+## Live version here ---> https://alexmark-pokedex.netlify.app/
 
 React and Typescript application
 
