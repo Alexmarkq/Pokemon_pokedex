@@ -31,12 +31,17 @@ const Pokemons = () => {
         return <LoadingScreen />
     }
 
+    const filteredPokemons = pokemons?.slice(0, 300).filter((pokemon) => {
+        return pokemon.name.toLocaleLowerCase().match(query.toLocaleLowerCase())
+    })
+
+
     return (
         <>
             <Header query={query} setQuery={setQuery} />
             <main>
                 <nav className={styles.nav}>
-                    {pokemons?.slice(0, 151).map((pokemon) => {
+                    {filteredPokemons.slice(0, 300).map((pokemon) => {
                         return (
                             <Link key={pokemon.id} className={styles.listItem} to={`/pokemons/${pokemon.name.toLowerCase()}`}>
                                 <img
